@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: 'Inter', sans-serif; 
+}
+/* Header section CSS */
+.header-container {
+  color: #034694;
+}
+
+.header-container > h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+/* Content Container Section CSS */
+.content-container {
+  color: #fff;
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+/* Start Section CSS */
+.start-container {
+  width: 60%;
+  margin: auto;
+  padding: 150px;
+  border-radius: 15px;
+  background-color: #034694;
+}
+
+.start-text {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.start-button {
+  font-size: 2rem;
+  border-radius: 15px;
+  background-color: #fff;
+  border: none;
+  padding: 15px;
+}
+
+/* Rules section CSS */
+.rules-container {
+  width: 60%;
+  margin: auto;
+  padding: 150px;
+  border-radius: 15px;
+  background-color: #000;
+  grid-row-start: 1;
+  display: none;
+}
+
+/* Guess section CSS */
+.guess-container {
+  width: 60%;
+  margin: auto;
+  padding: 150px;
+  border-radius: 15px;
+  background-color: #034694;
+  grid-row-start: 1;
+  display: none;
+}
+
+/* Answer section CSS */
+.answer-container {
+  width: 60%;
+  margin: auto;
+  padding: 150px;
+  border-radius: 15px;
+  background-color: #000;
+  grid-row-start: 1;
+  display: none;
+}
+
