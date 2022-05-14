@@ -4,76 +4,142 @@
   text-align: center;
   font-family: 'Inter', sans-serif; 
 }
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr 1fr 1fr 100px;
+  grid-template-rows: 100px 1fr 100px;
+}
+
 /* Header section CSS */
 .header-container {
+  display: none;
   color: #034694;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  justify-self: center;
+  align-self: baseline;
 }
 
 .header-container > h1 {
-  font-size: 3rem;
+  margin-top: 100px;
+  font-size: 4rem;
   font-weight: 900;
 }
 
 /* Content Container Section CSS */
 .content-container {
-  color: #fff;
-  display:grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  color: #034694;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-self: center;
 }
 
 /* Start Section CSS */
-.start-container {
-  width: 60%;
-  margin: auto;
-  padding: 150px;
-  border-radius: 15px;
-  background-color: #034694;
-}
-
 .start-text {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 500;
+  margin-bottom: 25px;
 }
 
 .start-button {
-  font-size: 2rem;
+  margin-top: 25px;
+  font-size: 1.5rem;
   border-radius: 15px;
-  background-color: #fff;
-  border: none;
-  padding: 15px;
+  background-color: #fefefe;
+  border: 1px solid #000;
+  padding: 5px 15px 5px 15px;
 }
 
 /* Rules section CSS */
 .rules-container {
-  width: 60%;
-  margin: auto;
-  padding: 150px;
-  border-radius: 15px;
-  background-color: #000;
-  grid-row-start: 1;
   display: none;
+}
+
+.rules-header {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #034694;
+  width: 70%;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+.rules {
+  font-weight: 300;
+  font-size: 1.25rem;
+  letter-spacing: 1.5px;
+  line-height: 50px;
+}
+
+.start-guessing-button {
+  margin-top: 25px;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  background-color: #fefefe;
+  border: 1px solid #000;
+  padding: 5px 15px 5px 15px;
 }
 
 /* Guess section CSS */
 .guess-container {
-  width: 60%;
-  margin: auto;
-  padding: 150px;
-  border-radius: 15px;
-  background-color: #034694;
-  grid-row-start: 1;
   display: none;
+}
+
+.guess-text {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 25px;;
+  letter-spacing: 1.5px;
+}
+
+.guess-input {
+  border: 1px solid #034694;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+input[type=text] {
+  font-size: 2rem;
+  color: #034694;
+}
+
+.guess-submit-button {
+  margin-top: 25px;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  background-color: #fefefe;
+  border: 1px solid #000;
+  padding: 5px 15px 5px 15px;
 }
 
 /* Answer section CSS */
 .answer-container {
-  width: 60%;
-  margin: auto;
-  padding: 150px;
-  border-radius: 15px;
-  background-color: #000;
-  grid-row-start: 1;
   display: none;
+}
+
+.answer-text {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 25px;;
+  letter-spacing: 1.5px;
+}
+
+.play-again-button {
+  margin-top: 25px;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  background-color: #fefefe;
+  border: 1px solid #000;
+  padding: 5px 15px 5px 15px;
 }
 
