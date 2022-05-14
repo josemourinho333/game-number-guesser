@@ -12,8 +12,8 @@ $('.start-guessing-button').click(function() {
   console.log(`Secret number: ${secretNumber}`);
 
   $('.guess-submit-button').click(function() {
-    const guess = $('.guess-input').val();
-
+    const guess = parseInt($('.guess-input').val());
+    
     if (storedGuesses.includes(guess)) {
       storedGuesses.push(guess);
       $('.guess-input').val('');
@@ -26,10 +26,10 @@ $('.start-guessing-button').click(function() {
         $('.answer-container').css('display', 'none');
         $('.answer-text').text('');
         $('.play-again-button').show()
-      }, 3000)
+      }, 2000)
     }
 
-    if (guess === '') {
+    if (isNaN(guess)) {
       $('.guess-input').val('');
       $('.guess-container').css('display','none');
       $('.answer-container').css('display', 'block');
@@ -40,7 +40,7 @@ $('.start-guessing-button').click(function() {
         $('.answer-container').css('display', 'none');
         $('.answer-text').text('');
         $('.play-again-button').show()
-      }, 3000)
+      }, 2000)
     }
 
     if (guess > secretNumber && !storedGuesses.includes(guess)) {
@@ -55,7 +55,7 @@ $('.start-guessing-button').click(function() {
         $('.answer-container').css('display', 'none');
         $('.answer-text').text('');
         $('.play-again-button').show()
-      }, 3000)
+      }, 2000)
     }
 
     if (guess < secretNumber && !storedGuesses.includes(guess)) {
@@ -70,7 +70,7 @@ $('.start-guessing-button').click(function() {
         $('.answer-container').css('display', 'none');
         $('.answer-text').text('');
         $('.play-again-button').show();
-      }, 3000)
+      }, 2000)
     }
 
     if (parseInt(guess) === secretNumber) {
